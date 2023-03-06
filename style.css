@@ -1,0 +1,197 @@
+@font-face {
+    font-family: MokotoGlitch;
+    src: url(font/MokotoGlitch.ttf) format("truetype");
+    
+}
+@font-face {
+    font-family: MokotoGlitchMark;
+    src:url(font/MokotoGlitchMark.ttf) format("truetype");
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgvideo{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.navigation nav{
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+}
+.title img{
+    margin: auto;
+    width:5%
+}
+.navigation nav h3{
+    font-family:"Anonymous Pro";
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.navigation nav h3 span{
+    color:crimson;
+}
+.navigation nav li a {
+    font-family:"Anonymous Pro";
+    letter-spacing: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.navigation nav ul li a:hover {
+    color: crimson;
+    transition: 0.4s;
+}
+.content{
+    text-align: center;
+}
+.webtitle h1{
+    letter-spacing: 30px;
+    color: white;
+    font-family: "MokotoGlitchMark";
+    font-size: 120px;
+    margin-bottom: 20px;
+    animation: glitch 1s infinite;
+}
+.webtitle h1 span{
+    color: white;
+}
+@keyframes glitch {
+    0% {
+        transform: translate(-3px, -3px);
+        color: rgb(255, 38, 38);
+        text-shadow: 0 0 10px rgb(255, 0, 0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+        color: rgb(0, 170, 255);
+        text-shadow: -3px 3px 10px blue;
+    }
+    to {
+        transform: translate(0,0);
+        color: rgb(38, 128, 0);
+        text-shadow: 0 0 10px green;
+    }
+}
+.content-description{
+    margin: auto;
+    width: 50%;
+    color: white;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.content-description p{
+    font-family: "Anonymous Pro";
+    margin-bottom: 10px;
+}
+.listen-now{
+    font-family: "MokotoGlitch";
+    color: crimson;
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+.listen-now:hover{
+    
+    background-color: crimson;
+    border: 1px solid crimson;
+    color: white;
+    transition: 0.4s;
+}
+
+/* PAGE  2*/
+.page2-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2-cover{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.page2-navigation nav{
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2-settings a{
+    font-size: 20px;
+    margin-right: 2em;
+    font-family:"Anonymous Pro";
+    color: white;
+    text-decoration: none;
+}
+.page2-settings a:hover{
+    color: crimson;
+    transition: 0.4s;
+}
+.page2-navigation h3{
+    margin-left: 50px;
+}
+.page2-navigation h3 span{
+    font-family:"Anonymous Pro";
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+}
+.page2-title img{
+    margin: auto;
+    width:4%
+}
+.page2-search-bar span{
+    color: white;
+    margin-left: 100px;
+}
+.page2-content{
+    text-align: center;
+}
+.table-content thead th{
+}
+
